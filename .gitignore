@@ -1,0 +1,6 @@
+gtk-3.0
+fontconfig
+pulse
+systemd
+environment.d
+zsh/.zsh_history
