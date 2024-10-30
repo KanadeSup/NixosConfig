@@ -13,4 +13,9 @@
       excludePackages = [ pkgs.xterm ];
     };
   };
+  environment.sessionVariables = {
+    XINITRC=".config/x11/xinitrc";
+    XAUTHORITY=".config/x11/xauthority";
+    GIT_ASKPASS=""; # Prevent calling git ask pass during git authentication
+  };
 }
