@@ -5,9 +5,8 @@
     enable = true;
     shellInit = ''
       export ZDOTDIR=~/.config/zsh
-      export ZHISTFILE=~/.config/zsh/.zsh_history
     '';
-    histFile="$HOME/.config/zsh/.histfile";
+    histFile="$HOME/.config/zsh/.zsh_history";
   };
   users.defaultUserShell = pkgs.zsh;
 }
