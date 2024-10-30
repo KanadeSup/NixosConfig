@@ -8,6 +8,6 @@
     noto-fonts-emoji
 
     # My fonts
-    (nerdfonts.override { fonts = [ "DejaVuSansMono" ]; })
+    (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 }
