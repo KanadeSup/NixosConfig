@@ -10,8 +10,18 @@ zstyle :compinstall filename '/home/Kanade/.zshrc'
 autoload -Uz compinit
 compinit
 
+
+# setting
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
+
+# Import add-on
+source $HOME/.config/zsh/prompt.zsh
+source $HOME/.config/zsh/history-search.zsh
 
 
 #########################################
@@ -20,11 +30,12 @@ eval "$(zoxide init zsh --cmd cd)"
 
 export PATH=~/bin:$PATH
 
-# Prompt
-NEWLINE=$'\n'
-FLINE='%B%F{cyan}%2~%f%b'
-SLINE='%F{green}%f '
-export PROMPT="${FLINE}${NEWLINE}${SLINE}"
+# History search
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+HISTORY_SUBSTRING_SEARCH_PREFIXED=1
+unset HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="fg=red,bold"
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_TIMEOUT=0.2
 
 
 #########################################
@@ -44,8 +55,8 @@ alias lla="eza -la --icons=auto"
 #		keymap 			#
 #########################################
 
-bindkey ^j history-search-backward
-bindkey ^k history-search-forward
+bindkey ^j history-substring-search-up
+bindkey ^k history-substring-search-down
 bindkey "^[l" forward-char
 bindkey "^[h" backward-char
 bindkey "^[b" backward-word
