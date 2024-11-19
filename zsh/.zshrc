@@ -50,6 +50,9 @@ alias ll="eza -l --icons=auto"
 alias la="eza -a --icons=auto"
 alias lla="eza -la --icons=auto"
 
+#editor
+alias vi="nvim"
+
 
 #########################################
 #		keymap 			#
