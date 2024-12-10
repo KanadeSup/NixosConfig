@@ -4,10 +4,7 @@
   fonts.packages = with pkgs; [
     # Essential fonts for website
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
-
-    # My fonts
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 }

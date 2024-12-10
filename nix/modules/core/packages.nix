@@ -20,4 +20,5 @@ with pkgs; [
   fzf
   tldr
   bottom
+  nerd-fonts.fira-code
 ]
