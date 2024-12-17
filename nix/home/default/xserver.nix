@@ -11,6 +11,7 @@
   };
 
   home.file.".config/x11/xinitrc".text = ''
+    picom &
     xrdb -merge ~/.config/x11/xresources
     sxhkd &
     exec bspwm
