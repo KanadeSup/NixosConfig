@@ -5,3 +5,5 @@ systemd
 environment.d
 zsh/.zsh_history
 x11
+nvim
+git
