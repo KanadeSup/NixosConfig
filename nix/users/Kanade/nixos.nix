@@ -1,8 +1,8 @@
 {
-  users.users = {
-    Kanade = {
-      isNormalUser = true;
-      extraGroups = [ "wheel" "docker" "networkmanager" ];
-    };
-  };
+   users.users = {
+      Kanade = {
+         isNormalUser = true;
+         extraGroups = [ "wheel" "docker" "networkmanager" ];
+      };
+   };
 }

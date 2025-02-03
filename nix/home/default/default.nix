@@ -1,8 +1,8 @@
 { ... }:
 
 {
-  imports = [
-    ./core.nix
-    ./xserver.nix
-  ];
+   imports = [
+      ./core.nix
+      ./xserver.nix
+   ];
 }

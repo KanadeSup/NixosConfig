@@ -1,8 +1,8 @@
 { ... }:
 
 {
-  networking = {
-    hostName = "KanadeThinkpad";
-    networkmanager.enable = true;
-  };
+   networking = {
+      hostName = "KanadeThinkpad";
+      networkmanager.enable = true;
+   };
 }

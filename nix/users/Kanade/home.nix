@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ../../home/default
-  ];
+   imports = [
+      ../../home/default
+   ];
 }
