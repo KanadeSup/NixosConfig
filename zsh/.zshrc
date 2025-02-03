@@ -4,6 +4,7 @@
 
 HISTSIZE=1000
 SAVEHIST=1000
+setopt dotglob
 setopt autocd
 bindkey -e
 zstyle :compinstall filename '/home/Kanade/.zshrc'
