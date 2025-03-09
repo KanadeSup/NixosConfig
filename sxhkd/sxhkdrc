@@ -95,6 +95,8 @@ alt + {_,shift +} 3
 alt + {_,shift +} 4
    bspc {desktop -f, node -d} IV
 
+alt + {_,shift +} 4
+   bspc {desktop -f, node -d} V
 #
 # preselect
 #
