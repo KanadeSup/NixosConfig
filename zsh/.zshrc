@@ -1,5 +1,14 @@
 #########################################
-#		Setup			#
+#              Import                   #
+#########################################
+
+source $HOME/.config/zsh/alias.zsh
+source $HOME/.config/zsh/prompt.zsh
+source $HOME/.config/zsh/history-search.zsh
+
+
+#########################################
+#              Setup                    #
 #########################################
 
 HISTSIZE=1000
@@ -20,13 +29,8 @@ setopt HIST_SAVE_NO_DUPS
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
-# Import add-on
-source $HOME/.config/zsh/prompt.zsh
-source $HOME/.config/zsh/history-search.zsh
-
-
 #########################################
-#		Environment		#
+#           Environment                 #
 #########################################
 
 export PATH=~/bin:$PATH
@@ -38,25 +42,8 @@ unset HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="fg=red,bold"
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_TIMEOUT=0.2
 
-
 #########################################
-#		Alias			#
-#########################################
-
-alias nb="sudo nixos-rebuild switch --flake ~/.config/nix#thinkpad"
-
-# eza
-alias ls="eza --icons=auto"
-alias ll="eza -l --icons=auto"
-alias la="eza -a --icons=auto"
-alias lla="eza -la --icons=auto"
-
-#editor
-alias vi="nvim"
-
-
-#########################################
-#		keymap 			#
+#                 keymap                #
 #########################################
 
 bindkey ^j history-substring-search-up
