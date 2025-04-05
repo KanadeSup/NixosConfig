@@ -7,5 +7,6 @@
       extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
       config.common.default = "gtk";
    };
-
+   virtualisation.docker.enable = true;
+   programs.firejail.enable = true;
 }

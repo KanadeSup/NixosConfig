@@ -7,12 +7,11 @@
 
       ./fonts.nix
       ./xserver.nix
-      ./flatpak.nix
+      ./sandbox.nix
       ./security.nix
       ./services.nix
       ./shell.nix
       ./xdg.nix
-      ./virtualisation.nix
    ];	
 
 }
