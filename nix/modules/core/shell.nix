@@ -4,7 +4,7 @@
    programs.zsh = {
       enable = true;
       shellInit = ''
-      export ZDOTDIR=~/.config/zsh
+         export ZDOTDIR=~/.config/zsh
       '';
       histFile="$HOME/.config/zsh/.zsh_history";
    };

@@ -12,6 +12,7 @@
       ./services.nix
       ./shell.nix
       ./xdg.nix
+      ./appimage.nix
    ];	
 
 }

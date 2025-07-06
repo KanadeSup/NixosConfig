@@ -20,15 +20,20 @@ with pkgs; [
    fzf
    tldr
    bottom
-   nerd-fonts.fira-code
+   nerd-fonts.fira-codels
    clang_19
    zellij
-   # Language server protocol
-   lua-language-server
-   typescript
-   typescript-language-server
-   rust-analyzer
-   tailwindcss-language-server
-   vue-language-server
 
+   ###### Language server protocol ######
+   lua-language-server
+   rust-analyzer
+   # typescript
+   # typescript-language-server
+   # tailwindcss-language-server
+
+   ###### Unfree packages ######
+   code-cursor
+   jetbrains.phpstorm
+   postman
+   navicat-premium
 ]
